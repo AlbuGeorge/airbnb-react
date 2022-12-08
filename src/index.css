@@ -3,11 +3,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,45 +21,91 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #f55a5a;
+  height: 55px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.logo {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #ffffff;
+  margin-left: 7px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.card {
+  display: flex;
+  padding: 20px 40px;
+}
+
+.image--container {
+  width: 160px;
+  height: 230px;
+  min-width: 160px;
+}
+
+.image--container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card--description {
+  padding: 20px;
+}
+
+.card--description h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2b283a;
+}
+
+.card--description p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 15px */
+
+  color: #2b283a;
+}
+
+.description--location a {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  margin-left: 12px;
+  color: #918e9b;
+}
+
+.description--location span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  color: #2b283a;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timespan {
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  line-height: 12px !important;
+  color: #2b283a !important;
 }
